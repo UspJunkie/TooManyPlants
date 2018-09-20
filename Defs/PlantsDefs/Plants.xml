@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="PlantBase">
+        <defName>Plant_Carrot</defName>
+        <label>carrot plant</label>
+        <description>this is a carrot plant</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.1</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/PotatoPlant</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>7</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>RawPotatoes</harvestedThingDef>
+            <harvestYield>22</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>5.8</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
+</Defs>
